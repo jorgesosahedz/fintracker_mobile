@@ -1,0 +1,12 @@
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\bin\Debug\netstandard2.0\FinTracker_1.deps.json
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\bin\Debug\netstandard2.0\FinTracker_1.dll
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\bin\Debug\netstandard2.0\FinTracker_1.pdb
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.csproj.CoreCompileInputs.cache
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.App.xaml.g.cs
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.LoginPage.xaml.g.cs
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.MainPage.xaml.g.cs
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.AssemblyInfoInputs.cache
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.AssemblyInfo.cs
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.dll
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.pdb
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.csprojResolveAssemblyReference.cache

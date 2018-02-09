@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:local="clr-namespace:Microcharts.Samples.Forms"
+             x:Class="FinTracker_1.MainPage">
+    <ContentPage.Content>
+        
+        <StackLayout Padding="15">
+            <Label Text="Expense Summary" HorizontalOptions="FillAndExpand"  FontSize="15" TextColor="White" BackgroundColor="Orange"></Label>
+            <microcharts:ChartView x:Name="barChartView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="200"/>
+            <Label Text="Expense By Category" HorizontalOptions="FillAndExpand"  FontSize="15" TextColor="White" BackgroundColor="Violet"></Label>
+            <ListView x:Name="expensesListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding categoryName}" FontAttributes="Bold"/>
+                                <Label Grid.Column="1" Text="{Binding year}"/>
+                                <Label Grid.Column="2" Text="{Binding month}"/>
+                                <Label Grid.Column="3" Text="{Binding amount, StringFormat='{0:C}'}"/>
+                                
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label Text="Expense By Payment" HorizontalOptions="FillAndExpand"  FontSize="15" TextColor="White" BackgroundColor="LightSeaGreen"></Label>
+            <ListView x:Name="expensesListViewPayment" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding paymentName}" FontAttributes="Bold"/>
+                                <Label Grid.Column="1" Text="{Binding year}"/>
+                                <Label Grid.Column="2" Text="{Binding month}"/>
+                                <Label Grid.Column="3" Text="{Binding amount, StringFormat='{0:C}'}"/>
+                                <Label Grid.Column="4" Text="{Binding bankName}"/>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+   </ContentPage.Content>
+</ContentPage>
