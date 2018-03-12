@@ -20,6 +20,7 @@ D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTrac
 D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1.Android\obj\Debug\res\drawable\logo.bmp
 D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1.Android\obj\Debug\R.cs.flag
 D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1.Android\obj\Debug\uploadflags.txt
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1.Android\obj\Debug\res\drawable\edit_button.png
 D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1.Android\bin\Debug\FinTracker_1.Android.dll.mdb
 D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1.Android\bin\Debug\FormsViewGroup.dll.mdb
 D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb

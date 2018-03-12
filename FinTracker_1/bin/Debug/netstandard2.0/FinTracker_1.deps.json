@@ -15,7 +15,8 @@
           "NETStandard.Library": "2.0.0",
           "Newtonsoft.Json": "10.0.3",
           "System.Net.Http": "4.3.3",
-          "Xamarin.Forms": "2.5.0.121934"
+          "Xamarin.Forms": "2.5.0.121934",
+          "Mono.Android": "0.0.0.0"
         },
         "runtime": {
           "FinTracker_1.dll": {}
@@ -799,6 +800,11 @@
           "lib/netstandard1.0/Xamarin.Forms.Platform.dll": {},
           "lib/netstandard1.0/Xamarin.Forms.Xaml.dll": {}
         }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {}
+        }
       }
     }
   },
@@ -1374,6 +1380,11 @@
       "sha512": "sha512-H3Gh6nvximMk9i8LdfhPnARo+kEsh8hDXWRboiUPb1r22gkIGA8i8tbnRcSXJWk4fCW/kdMTom6SFN0L+NhItw==",
       "path": "xamarin.forms/2.5.0.121934",
       "hashPath": "xamarin.forms.2.5.0.121934.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

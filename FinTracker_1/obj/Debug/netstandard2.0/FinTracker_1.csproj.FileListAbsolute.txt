@@ -9,4 +9,12 @@ D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTrac
 D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.AssemblyInfo.cs
 D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.dll
 D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.pdb
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.CategoriesPage.xaml.g.cs
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\bin\Debug\netstandard2.0\Mono.Android.dll
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\bin\Debug\netstandard2.0\Mono.Android.pdb
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\bin\Debug\netstandard2.0\Mono.Android.xml
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.PaymentsPage.xaml.g.cs
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.TransactionsPage.xaml.g.cs
 D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.csprojResolveAssemblyReference.cache
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.TabbedMainPage.xaml.g.cs
+D:\Dev\Projects\FinTracker\Mobile\FinTracker_1\FinTracker_1\FinTracker_1\FinTracker_1\obj\Debug\netstandard2.0\FinTracker_1.ReportsPage.xaml.g.cs

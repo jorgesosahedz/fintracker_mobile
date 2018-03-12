@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinTracker_1.TransactionsPage" Title="Transactions">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+        <StackLayout>
+            <Frame BackgroundColor="LightSeaGreen" Padding="0,0,0,0">
+                <StackLayout Orientation="Horizontal" Padding="0,0,0,0">
+                    <Label Text="Transactions" HorizontalOptions="Start"  FontSize="15" TextColor="White"  VerticalOptions="Center"></Label>
+
+                        <Button Text="Save" x:Name="savePaymentAccountButton"  HorizontalOptions="EndAndExpand" FontSize="Small" TextColor="White" 
+                                BackgroundColor="LightSeaGreen" BorderColor="White" HeightRequest="35" WidthRequest="60"></Button>
+                    </StackLayout>
+            </Frame>
+        </StackLayout>
+        
+        <!-- Expense transaction date-->
+        <StackLayout Orientation="Horizontal">
+            <Label>Expense Date:</Label>
+            <DatePicker x:Name="transactionExpenseDate">
+                <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+            </DatePicker>
+            <!-- Amount -->
+             <Label HorizontalOptions="Start">Amount:</Label>
+             <Entry HorizontalOptions="FillAndExpand" x:Name="amount"  Keyboard="Numeric"></Entry>
+         </StackLayout>
+
+        
+        <StackLayout Orientation="Vertical">
+         
+            <!-- Payment Account-->
+                <Picker x:Name="paymentAccount" Title="Select Payment Account">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Baboon</x:String>
+                            <x:String>Capuchin Monkey</x:String>
+                            <x:String>Blue Monkey</x:String>
+                            <x:String>Squirrel Monkey</x:String>
+                            <x:String>Golden Lion Tamarin</x:String>
+                            <x:String>Howler Monkey</x:String>
+                            <x:String>Japanese Macaque</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+               
+        <!-- Sub category -->
+         <Picker x:Name="subcategory" Title="Select a Subcategory">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Baboon</x:String>
+                            <x:String>Capuchin Monkey</x:String>
+                            <x:String>Blue Monkey</x:String>
+                            <x:String>Squirrel Monkey</x:String>
+                            <x:String>Golden Lion Tamarin</x:String>
+                            <x:String>Howler Monkey</x:String>
+                            <x:String>Japanese Macaque</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <!-- Description -->
+            <Label HorizontalOptions="Start">Description:</Label>
+            <Entry HorizontalOptions="FillAndExpand" x:Name="description"></Entry>
+        </StackLayout>
+      </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

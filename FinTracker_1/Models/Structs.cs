@@ -31,5 +31,34 @@ namespace FinTracker_1.Models
             public string paymentName { get; set; }
             public string bankName { get; set; }
         }
+
+        public class Category
+        {
+            public int categoryId { get; set; }
+            public string name { get; set; }
+            public int userId { get; set; }
+            
+        }
+        
+        public class Subcategory
+        {
+            public int subcategoryId { get; set; }
+            public int categoryId { get; set; }
+            public string name { get; set; }
+            public int userId { get; set; }
+        }
+
+        public class Payments
+        {
+            public int paymentTypeID { get; set; }
+            public int userId { get; set; }
+            public string name { get; set; }
+            public string bankName { get; set; }
+            public string cutDate { get; set; }
+            public string payDateLimit { get; set; }
+            public double amountLimit { get; set; }
+            public double creditMonthlyInterestRate { get; set; }
+
+        }
     }
 }

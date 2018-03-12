@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinTracker_1.CategoriesPage" Title="Categories">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            
+        <Frame Padding="0,0,0,0" BackgroundColor="Violet" HeightRequest="40">
+            
+            <StackLayout Orientation="Horizontal" >
+
+                    <TableView VerticalOptions="Center">
+                        <TableRoot>
+                            <TableSection>
+                                <EntryCell x:Name="categoryNameEntry" Label="Category:" LabelColor="White" Placeholder="Your Category"></EntryCell>
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>
+
+                    <Button Text="Save" x:Name="saveCategoryButton"  HorizontalOptions="FillAndExpand" FontSize="Small" TextColor="White" 
+                            BackgroundColor="Violet" BorderColor="White" HeightRequest="35" WidthRequest="60" Clicked="saveCategoryButtonClicked" ></Button>
+
+             </StackLayout>
+        </Frame>
+            <Label Text="Categories" TextColor="White" BackgroundColor="SlateBlue" FontSize="Small"></Label>
+            <ListView x:Name="categoryListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ItemSelected="categorySelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding name}" FontAttributes="Bold"/>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Frame Padding="0,0,0,0" BackgroundColor="Violet" HeightRequest="40">
+
+                <StackLayout Orientation="Horizontal" >
+
+                    <TableView VerticalOptions="Center">
+                        <TableRoot>
+                            <TableSection>
+                                <EntryCell x:Name="subcategoryNameEntry" Label="Subcategory:" LabelColor="White" Placeholder="Your subcategory"></EntryCell>
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>
+                    
+                    <Button Text="Save" x:Name="saveSubcategoryButton"  HorizontalOptions="FillAndExpand" FontSize="Small" TextColor="White" 
+                            BackgroundColor="Violet" BorderColor="White" HeightRequest="35" WidthRequest="60" Clicked="saveSubcategoryButtonClicked" ></Button>
+
+                </StackLayout>
+            </Frame>
+            <Label Text="Subcategories" TextColor="White" BackgroundColor="SlateBlue" FontSize="Small"></Label>
+            <ListView x:Name="subcategoryListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ItemSelected="subcategorySelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding name}" FontAttributes="Bold"/>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

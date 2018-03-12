@@ -23,7 +23,6 @@ namespace FinTracker_1
 	{
        
         private HttpClient _client;
-        private ObservableCollection<ExpenseByMonth> _expenses;
         private ObservableCollection<ExpenseMonthByCategory> _expenses_1;
         private ObservableCollection<ExpenseMonthByPayment> _expenses_2;
         private Uri uri, uri_expenseByCategory, uri_expenseByPayment;
@@ -42,6 +41,16 @@ namespace FinTracker_1
          async private void Button_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
+        }
+
+        async private void addCategoryClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CategoriesPage());
+        }
+
+        async private void addPaymentClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PaymentsPage());
         }
 
         protected async override void OnAppearing()

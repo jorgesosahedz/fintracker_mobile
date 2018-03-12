@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:content_pages="clr-namespace:FinTracker_1;assembly=FinTracker_1"
+             x:Class="FinTracker_1.TabbedMainPage" Title="Summary">
+    <TabbedPage.BarBackgroundColor>Black</TabbedPage.BarBackgroundColor>
+    <TabbedPage.HeightRequest>15</TabbedPage.HeightRequest>
+        <TabbedPage.Children>
+        <content_pages:MainPage></content_pages:MainPage>
+        <content_pages:TransactionsPage></content_pages:TransactionsPage>
+        <content_pages:ReportsPage></content_pages:ReportsPage>
+    </TabbedPage.Children>
+</TabbedPage>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="FinTracker_1.PaymentsPage" Title="Payments">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Frame BackgroundColor="LightSeaGreen" Padding="0,0,0,0">
+                <StackLayout Orientation="Horizontal" Padding="0,0,0,0">
+                    <Label Text="Payment Accounts" HorizontalOptions="Start"  FontSize="15" TextColor="White"  VerticalOptions="Center"></Label>
+                    
+                    <Button Text="Save" x:Name="savePaymentAccountButton"  HorizontalOptions="EndAndExpand" FontSize="Small" TextColor="White" 
+                            BackgroundColor="LightSeaGreen" BorderColor="White" HeightRequest="35" WidthRequest="60" Clicked="savePaymentAddButtonClicked"></Button>
+
+                </StackLayout>
+            </Frame>
+            <!-- Payment date-->
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="Start" >Name:</Label>
+                <Entry HorizontalOptions="FillAndExpand" x:Name="paymentName"></Entry>
+
+                <!-- Entry for Bank-->
+                <Label HorizontalOptions="Start">Bank:</Label>
+                <Entry HorizontalOptions="FillAndExpand" x:Name="bank"></Entry>
+            </StackLayout>
+            
+            <!-- Cut date-->
+            <StackLayout Orientation="Vertical">
+                <Label>Cut Date:</Label>
+                <DatePicker x:Name="paymentCutDate">
+                    <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+                </DatePicker>
+
+                <Label>Due Date:</Label>
+                <DatePicker x:Name="paymentDateLimit" VerticalOptions="CenterAndExpand">
+                    <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+                </DatePicker>
+            </StackLayout>
+            
+            <!-- Amount-->
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="Start">Amount:</Label>
+                <Entry HorizontalOptions="FillAndExpand" x:Name="amount"  Keyboard="Numeric"></Entry>
+
+                <!-- Interest-->
+                <Label HorizontalOptions="Start">Interest:</Label>
+                <Entry HorizontalOptions="FillAndExpand" x:Name="interest"  Keyboard="Numeric"></Entry>
+            </StackLayout>
+            <StackLayout>
+                <BoxView HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <ListView x:Name="paymentListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding name}" FontAttributes="Bold"/>
+                                <Label Grid.Column="1" Text="{Binding bankName}"/>
+                                <Label Grid.Column="2" Text="{Binding cutDate}"/>
+                                <Label Grid.Column="3" Text="{Binding payDateLimit}"/>
+                                <Label Grid.Column="4" Text="{Binding amountLimit, StringFormat='{0:C}'}"/>
+                                <Label Grid.Column="5" Text="{Binding creditMonthlyInterestRate, StringFormat='{0:C}'}"/>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

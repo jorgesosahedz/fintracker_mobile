@@ -3,13 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              xmlns:local="clr-namespace:Microcharts.Samples.Forms"
-             x:Class="FinTracker_1.MainPage">
+             x:Class="FinTracker_1.MainPage" Title="Summary">
     <ContentPage.Content>
-        
         <StackLayout Padding="15">
-            <Label Text="Expense Summary" HorizontalOptions="FillAndExpand"  FontSize="15" TextColor="White" BackgroundColor="Orange"></Label>
+            <Frame BackgroundColor="Orange" Padding="0,0,0,0">
+            <StackLayout Orientation="Horizontal" Padding="0,0,0,0">
+                    <Label Text="Expense Summary" HorizontalOptions="FillAndExpand"  FontSize="15" TextColor="White"  VerticalOptions="Center"></Label>
+                    <Button Text="+" x:Name="add_transaction_button"  HorizontalOptions="End" FontSize="Small"  TextColor="White" 
+                            BackgroundColor="Orange" BorderColor="White" HeightRequest="35" WidthRequest="60" ></Button>
+                </StackLayout>
+            </Frame>
             <microcharts:ChartView x:Name="barChartView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="200"/>
-            <Label Text="Expense By Category" HorizontalOptions="FillAndExpand"  FontSize="15" TextColor="White" BackgroundColor="Violet"></Label>
+            <Frame BackgroundColor="Violet" Padding="0,0,0,0">
+                <StackLayout Orientation="Horizontal" Padding="0,0,0,0">
+                    <Label Text="Expense by Category" HorizontalOptions="FillAndExpand"  FontSize="15" TextColor="White"  VerticalOptions="Center"></Label>
+                    <Button Text="+" x:Name="add_category_button"  HorizontalOptions="End" FontSize="Small" TextColor="White" 
+                            BackgroundColor="Violet" BorderColor="White" HeightRequest="35" WidthRequest="60" Clicked="addCategoryClicked"></Button>
+                </StackLayout>
+            </Frame>
             <ListView x:Name="expensesListView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -33,7 +44,13 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Label Text="Expense By Payment" HorizontalOptions="FillAndExpand"  FontSize="15" TextColor="White" BackgroundColor="LightSeaGreen"></Label>
+            <Frame BackgroundColor="LightSeaGreen" Padding="0,0,0,0">
+                <StackLayout Orientation="Horizontal" Padding="0,0,0,0">
+                    <Label Text="Expense by Payment Accounts" HorizontalOptions="FillAndExpand"  FontSize="15" TextColor="White"  VerticalOptions="Center"></Label>
+                    <Button Text="+" x:Name="add_payment_button"  HorizontalOptions="End" FontSize="Small" TextColor="White" 
+                            BackgroundColor="LightSeaGreen" BorderColor="White" HeightRequest="35" WidthRequest="60" Clicked="addPaymentClicked"></Button>
+                </StackLayout>
+            </Frame>
             <ListView x:Name="expensesListViewPayment" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <ListView.ItemTemplate>
                     <DataTemplate>
